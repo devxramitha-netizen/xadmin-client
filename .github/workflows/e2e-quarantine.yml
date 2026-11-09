@@ -16,6 +16,7 @@ jobs:
   quarantine:
     name: Quarantine re-run (chromium + webkit)
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     services:
       postgres:
         # 与 e2e.yml 同构：settings_e2e 真库化缺省连接参数（127.0.0.1:55433 / server / pgtest）
